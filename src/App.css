@@ -1,21 +1,13 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  max-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,16 +15,60 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Logo {
+  height: 10vh;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
 
+.Main {
+  background-color: white;
+  height: 90vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.First {
+  width: 100vw;
+}
+.Second {
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Sss {
+  height: 75vh;
+  /* width: 70vw; */
+}
 .App-link {
   color: #61dafb;
 }
+.Playstore {
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+/* src/App.css */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.countdown div {
+  margin: 0 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.countdown span {
+  display: block;
+  font-size: 72px;
+  color: #007bff;
 }
